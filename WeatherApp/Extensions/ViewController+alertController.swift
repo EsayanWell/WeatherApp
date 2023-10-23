@@ -11,10 +11,9 @@ import UIKit
 // MARK: - Extension for ViewController
 
 extension ViewController {
-    
     // creating alercController
     // функция создает и отображает диалоговое окно, позволяя пользователю ввести название города для поиска информации, и предоставляет опции "Search" и "Cancel" для выполнения соответствующих действий.
-    func presentSearchAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style) {
+    func presentSearchAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style, competionHandler: @escaping (String) -> Void) {
         // создание экземпляра UIController
         let ac = UIAlertController(title: title, message: message, preferredStyle: style)
         // добавление текстового поля
@@ -29,7 +28,10 @@ extension ViewController {
             let textField = ac.textFields?.first
             guard let cityName = textField?.text else { return }
             if cityName != "" {
-                print("search info for the \(cityName)")
+                //                self.networkWeatherManager.fetchCurrentWeather(forCity: cityName)
+                // если город состоит из 2 слов
+                let city = cityName.split(separator: " ").joined(separator: "%20")
+                competionHandler(city)
             }
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
