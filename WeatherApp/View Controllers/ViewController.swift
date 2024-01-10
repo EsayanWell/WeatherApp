@@ -1,6 +1,8 @@
-
-//  Created by Esayan Well
-
+//
+//  NetworkWeatherManager.swift
+//  WeatherApp
+//
+//  Created by Владимир Есаян on 20.10.2023.
 
 import UIKit
 import CoreLocation

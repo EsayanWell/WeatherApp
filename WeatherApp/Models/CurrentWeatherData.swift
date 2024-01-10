@@ -1,10 +1,8 @@
 //
-//  CurrentWeatherData.swift
+//  NetworkWeatherManager.swift
 //  WeatherApp
 //
-//  Created by Владимир Есаян on 23.10.2023.
-//  Copyright © 2023 Ivan Akulov. All rights reserved.
-//
+//  Created by Владимир Есаян on 20.10.2023.
 
 import Foundation
 

@@ -1,17 +1,15 @@
 //
-//  ViewController+alertController.swift
-//  Sunny
+//  NetworkWeatherManager.swift
+//  WeatherApp
 //
-//  Created by Ivan Akulov on 25/02/2020.
-//  Copyright © 2020 Ivan Akulov. All rights reserved.
-//
+//  Created by Владимир Есаян on 20.10.2023.
 
 import UIKit
 
 // MARK: - Extension for ViewController
 
 extension ViewController {
-    // creating alercController
+    // creating alertController
     // функция создает и отображает диалоговое окно, позволяя пользователю ввести название города для поиска информации, и предоставляет опции "Search" и "Cancel" для выполнения соответствующих действий.
     func presentSearchAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style, competionHandler: @escaping (String) -> Void) {
         // создание экземпляра UIController

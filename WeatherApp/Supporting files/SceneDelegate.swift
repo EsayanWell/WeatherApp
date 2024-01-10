@@ -1,10 +1,8 @@
 //
-//  SceneDelegate.swift
-//  Sunny
+//  NetworkWeatherManager.swift
+//  WeatherApp
 //
-//  Created by Ivan Akulov on 24/02/2020.
-//  Copyright © 2020 Ivan Akulov. All rights reserved.
-//
+//  Created by Владимир Есаян on 20.10.2023.
 
 import UIKit
 

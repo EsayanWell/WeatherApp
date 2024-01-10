@@ -3,8 +3,6 @@
 //  WeatherApp
 //
 //  Created by Владимир Есаян on 20.10.2023.
-//  Copyright © 2023 Ivan Akulov. All rights reserved.
-//
 
 import Foundation
 import CoreLocation
